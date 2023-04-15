@@ -1,0 +1,20 @@
+.lsp-scrolling-container {
+  position: relative;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.lsp-scrolling-container .lsp-stock {
+  display: inline-block;
+  padding: 0 10px;
+  animation: scroll 20s linear infinite;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
